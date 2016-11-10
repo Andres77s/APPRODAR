@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fondo2"
+    tools:context="com.andresvanegas.approdar.PERFIL">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_frame">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView4"
+        android:background="@drawable/perfil"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        app:rippleColor="@color/white"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="25dp"
+       android:textColor="@color/white"
+       android:text="@string/hint_usuario"
+       android:layout_marginTop="51dp"
+       android:id="@+id/epusuario"
+       android:layout_below="@+id/imageView4"
+       android:layout_alignStart="@+id/epdocumento" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Documento"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/epdocumento"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/epusuario"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacto"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/epcontacto"
+        android:layout_below="@+id/epdocumento"
+        android:layout_alignStart="@+id/epdocumento" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/epcontacto"
+        android:layout_alignStart="@+id/epcontacto" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+</android.support.v4.widget.DrawerLayout>

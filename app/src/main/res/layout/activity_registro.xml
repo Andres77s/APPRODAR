@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.andresvanegas.approdar.REGISTRO">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+        <EditText
+            android:id="@+id/edocumentor"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_documento"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_below="@+id/eusuarior"
+            android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/ecele"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_contacto"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_below="@+id/edocumentor"
+            android:layout_centerHorizontal="true" />
+
+
+        <EditText
+            android:id="@+id/erecontrar"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_contraseñar"
+            android:inputType="textPassword"
+            android:layout_below="@+id/econtar"
+            android:layout_alignStart="@+id/econtar" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="aceptar"
+        android:id="@+id/baceptar"
+        android:background="#000000"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/erecontrar"
+        android:layout_alignStart="@+id/erecontrar" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="cancelar"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:id="@+id/bcancelar"
+        android:layout_marginRight="17dp"
+        android:layout_alignTop="@+id/baceptar"
+        android:layout_toEndOf="@+id/baceptar"
+        android:layout_marginStart="18dp" />
+
+    <EditText
+        android:id="@+id/eusuarior"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_usuario"
+        android:inputType="text"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/econtar"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@+id/ecele"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

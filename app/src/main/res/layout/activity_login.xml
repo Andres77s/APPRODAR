@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.andresvanegas.approdar.LOGIN"
+    android:background="@drawable/fondo"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.20" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/campo_nombre"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_usuario"
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignEnd="@+id/bregistrar" />
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="ingresar"
+        android:id="@+id/bingresar"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="#000000"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/campo_contraseña"
+        android:layout_alignStart="@+id/campo_contraseña" />
+
+        <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="registrarse"
+        android:textSize="20dp"
+        android:id="@+id/bregistrar"
+        android:textColor="@color/white"
+        android:background="@color/black"
+            android:layout_alignTop="@+id/bingresar"
+            android:layout_alignEnd="@+id/campo_contraseña" />
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/campo_contraseña"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_contraseña"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_below="@+id/campo_nombre"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
